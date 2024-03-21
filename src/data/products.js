@@ -95,6 +95,12 @@ const PRODUCTS = [
         price: "14 200 ₽",
         preview: product_5
     },
+    {
+        id: 16,
+        title: "Кроссовки Nike Air Jordan 1 Middle",
+        price: "9 990 ₽",
+        preview: product_3
+    },
 ]
 
 export default PRODUCTS;

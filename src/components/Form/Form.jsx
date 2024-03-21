@@ -1,6 +1,7 @@
 const Form = () => {
     return (
         <>
+        <div className="container">
             <div className="form-container">
                 <div className="form">
 
@@ -17,6 +18,7 @@ const Form = () => {
 
                 </div>
             </div>
+        </div>
         </>
     )
 }

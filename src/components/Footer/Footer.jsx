@@ -27,7 +27,7 @@ const Footer = () => {
 
                 </div>
 
-                <h2>© Salakhiev Airat</h2>
+                <h2>© Gumerova Adelina</h2>
 
             </footer>
         </>

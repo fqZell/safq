@@ -20,7 +20,7 @@ const initialItemState = [
         id: 2,
         background: "#FFF",
         title: "Adidas Stan Smith",
-        banner: "https://cross-city.ru/upload/iblock/348/adidas-stan-smith-belye_img.jpg",
+        banner: "https://voronezh.streetfoot.ru/wp-content/uploads/2019/02/adidas-Stan-Smith-2014-00.jpg",
         button: {
             url: "/",
             text: "Купить сейчас"
@@ -30,7 +30,7 @@ const initialItemState = [
         id: 3,
         background: "#FFF",
         title: "Nike Air Force one by fqZell",
-        banner: "https://kicksmania.ru/wp-content/uploads/2022/06/nike-air-force-1-low-white.jpg",
+        banner: "https://kazan.streetfoot.ru/wp-content/uploads/2021/02/nike-air-force-1-low-pixel-triple-belye-35-39.jpg",
         button: {
             url: "/",
             text: "Купить сейчас"
@@ -47,22 +47,24 @@ const Slider = () => {
 
     return (
         <>
-        <div className="slider-container">
+        <div className="container">
+            <div className="slider-container">
 
-            <div className="slider">
+                <div className="slider">
 
-                <div className="slide active">
+                    <div className="slide active">
 
-                    <Slide slide={items[currentIndex]} />
+                        <Slide slide={items[currentIndex]} />
+
+                    </div>
+
+                    <button onClick={next} className="slider-arrow">
+                        <img src={arrow} alt="arrow" />
+                    </button>
 
                 </div>
 
-                <button onClick={next} className="slider-arrow">
-                    <img src={arrow} alt="arrow" />
-                </button>
-
             </div>
-
         </div>
         </>
     )

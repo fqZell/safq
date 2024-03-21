@@ -16,39 +16,44 @@ const ProductPage = () => {
 
     return (
         <>
-            <div className="CartProduct-container">
 
-                <div className="CartProduct-header">
-                    <h1>Все товары</h1>
+            <div className="container">
 
-                    <div class="search-form">
-                        <div class="search-box">
-                        <button type="submit"><img src={search} alt="Поиск"/></button>
-                        <input
-                            value={query}
-                            onChange={(e) => onChangeQuery(e)}
-                            type="text" 
-                            placeholder="Поиск..." 
-                        />
+                <div className="CartProduct-container">
+
+                    <div className="CartProduct-header">
+                        <h1>Все товары</h1>
+
+                        <div class="search-form">
+                            <div class="search-box">
+                            <button type="submit"><img src={search} alt="Поиск"/></button>
+                            <input
+                                value={query}
+                                onChange={(e) => onChangeQuery(e)}
+                                type="text" 
+                                placeholder="Поиск..." 
+                            />
+                            </div>
                         </div>
                     </div>
+
+                    <div className="carts">
+                    {
+                        filteredProducts.length ?
+                            filteredProducts.map((product) => {
+                                return (
+                                    <Product key={product.id} product={product} />
+                                );
+                            })
+
+                            :
+
+                            <h2>По вашему запросу "{query}" ничего не найдено!</h2>
+                    }
+                    </div>
+                    
                 </div>
 
-                <div className="carts">
-                {
-                    filteredProducts.length ?
-                        filteredProducts.map((product) => {
-                            return (
-                                <Product key={product.id} product={product} />
-                            );
-                        })
-
-                        :
-
-                        <h2>По вашему запросу "{query}" ничего не найдено!</h2>
-                }
-                </div>
-                
             </div>
         </>
     )
