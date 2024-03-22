@@ -14,7 +14,7 @@ const Product = ({ product }) => {
                     </NavLink>
 
                     <div className="cart-total">
-                        Цена:<br></br>{product.price}
+                        Цена:<br></br>{product.price} ₽
                         <button><img src={cartBasket} alt="basket" /></button>
                     </div>
                 </div>

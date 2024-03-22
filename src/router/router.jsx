@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Root from "../Pages/Root";
 import SingleProductPage from "../Pages/SingleProductPage.jsx";
+import UsersPage from "../Pages/UsersPage.jsx";
 
 
 const HomePage = React.lazy(() => import("../Pages/HomePage.jsx"));
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "/product/:id",
                 element: <SingleProductPage />
+            },
+            {
+                path: "/users",
+                element: <UsersPage />
             },
         ]
     }

@@ -1,3 +1,5 @@
+import Accordion from "../Accordion/Accordion";
+
 const Form = () => {
     return (
         <>
@@ -18,6 +20,8 @@ const Form = () => {
 
                 </div>
             </div>
+
+            <Accordion />
         </div>
         </>
     )

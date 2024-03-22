@@ -29,7 +29,7 @@ const initialItemState = [
     {
         id: 3,
         background: "#FFF",
-        title: "Nike Air Force one by fqZell",
+        title: "Nike Air Force One",
         banner: "https://kazan.streetfoot.ru/wp-content/uploads/2021/02/nike-air-force-1-low-pixel-triple-belye-35-39.jpg",
         button: {
             url: "/",

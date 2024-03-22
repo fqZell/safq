@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import cartBasket from "../assets/cartBasket.svg";
 import PRODUCTS from "../data/products";
 
@@ -15,7 +15,10 @@ const SingleProductPage = () => {
   return (
         <>
         
-        <div className="container">
+        <div className="container single-product">
+
+            <NavLink to={"/product"} className="back">Назад</NavLink>
+
             <div className="cart">
                     <img src={product.preview} alt="Продукт" />
 

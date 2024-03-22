@@ -43,7 +43,9 @@ const Header = () => {
 
                             <div className="header-icons">
                                 <img onClick={openModal} src={basket} alt="basket" />
-                                <img src={account} alt="account" />
+                                <NavLink to="/users">
+                                    <img src={account} alt="account" />
+                                </NavLink>
                             </div>
 
                             </nav>
